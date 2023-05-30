@@ -3,7 +3,7 @@
     "./src/main.ts"
   ],
   "options": {
-    "outFile": "../public/cart.wasm",
+    "outFile": "build/cart.wasm",
     "runtime": "incremental",
     "importMemory": true,
     "initialMemory": 1,
@@ -17,6 +17,14 @@
     ]
   },
   "targets": {
+    "web": {
+      "optimizeLevel": 3,
+      "shrinkLevel": 2,
+      "converge": true,
+      "noAssert": true,
+      "use": "abort=",
+      "outFile": "../public/cart.wasm"
+    },
     "release": {
       "optimizeLevel": 3,
       "shrinkLevel": 2,

@@ -7,7 +7,7 @@
     "dev:web": "vite",
     "dev:wasm": "cd game && w4 watch",
     "build:web": "tsc && vite build",
-    "build:wasm": "cd game && npm run build"
+    "build:wasm": "cd game && npm run build:web"
   },
   "devDependencies": {
     "typescript": "^5.0.2",

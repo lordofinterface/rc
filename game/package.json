@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "asc --target release",
-    "build:debug": "asc --target release"
+    "build:debug": "asc --target release",
+    "build:web": "asc --target web"
   },
   "devDependencies": {
     "assemblyscript": "^0.21.3"
